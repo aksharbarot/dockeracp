@@ -42,15 +42,15 @@ Default login is admin:password
 Deploy a datacenter:
 
 ```
-docker exec -ti cloudstack python \
+docker exec -ti cloudplatform python \
 /root/Accelerite-CloudPlatform-acp-4.11_RHEL8Support_HF8/tools/marvin/marvin/deployDataCenter.py -i /root/Accelerite-CloudPlatform-acp-4.11_RHEL8Support_HF8/setup/dev/advanced.cfg
 # or 
 
-docker exec -ti cloudstack python \
+docker exec -ti cloudplatform python \
 /root/Accelerite-CloudPlatform-acp-4.11_RHEL8Support_HF8/tools/marvin/marvin/deployDataCenter.py -i /root/Accelerite-CloudPlatform-acp-4.11_RHEL8Support_HF8/setup/dev/advancedsg.cfg
 # or 
 
-docker exec -ti cloudstack python \
+docker exec -ti cloudplatform python \
 /root/Accelerite-CloudPlatform-acp-4.11_RHEL8Support_HF8/tools/marvin/marvin/deployDataCenter.py -i /root/Accelerite-CloudPlatform-acp-4.11_RHEL8Support_HF8/setup/dev/basic.cfg
 ```
 
