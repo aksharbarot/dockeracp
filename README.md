@@ -28,7 +28,7 @@ NOTE: It may take some time configure CloudPlatform HF8. (Max 4 to 5 Minutes)
 Docker Notes:
 --------------------
 
-Ubuntu 16.04 image that contains all necessary software to compile CloudPlatform. CloudPlatform code is in `/root/Accelerite-CloudPlatform-acp-4.11_RHEL8Support_HF8/` and compiled with the simulator. MySQL database is running via supervisord. Start the container and you will enjoy CloudPlatform with a simulated data center.
+Ubuntu 16.04 image that contains all necessary software to compile CloudPlatform. CloudPlatform code is in `/root/Accelerite-CloudPlatform-5dee9ee28067748d485344f4b9b0eb345acfad51/` and compiled with the simulator. MySQL database is running via supervisord. Start the container and you will enjoy CloudPlatform with a simulated data center.
 
 ```
 docker pull axar1990/cloudplatform-simulator:hf8
