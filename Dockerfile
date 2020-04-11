@@ -34,18 +34,18 @@ RUN service mysql restart; sleep 5;  mysqladmin -u root -proot password ''
 #RUN pip install --allow-external mysql-connector-python mysql-connector-python
 RUN pip install paramiko requests
 
-RUN wget http://10.148.28.252/ISO/Accelerite-CloudPlatform-acp-4.11_RHEL8Support_HF8.zip -O /root/Accelerite-CloudPlatform-acp-4.11_RHEL8Support_HF8.zip
+RUN wget http://10.148.28.252/ISO/Accelerite-CloudPlatform-5dee9ee28067748d485344f4b9b0eb345acfad51.zip -O /root/Accelerite-CloudPlatform-5dee9ee28067748d485344f4b9b0eb345acfad51.zip
 
-RUN unzip /root/Accelerite-CloudPlatform-acp-4.11_RHEL8Support_HF8.zip -d /root/
+RUN unzip /root/Accelerite-CloudPlatform-5dee9ee28067748d485344f4b9b0eb345acfad51.zip -d /root/
 
-#RUN mv /root/Accelerite-CloudPlatform-acp-4.11_RHEL8Support_HF8 /root
+#RUN mv /root/Accelerite-CloudPlatform-5dee9ee28067748d485344f4b9b0eb345acfad51 /root
 
 COPY ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 
-ENV PYTHONPATH="/root/Accelerite-CloudPlatform-acp-4.11_RHEL8Support_HF8/tools/marvin"
+ENV PYTHONPATH="/root/Accelerite-CloudPlatform-5dee9ee28067748d485344f4b9b0eb345acfad51/tools/marvin"
 
-WORKDIR /root/Accelerite-CloudPlatform-acp-4.11_RHEL8Support_HF8/
+WORKDIR /root/Accelerite-CloudPlatform-5dee9ee28067748d485344f4b9b0eb345acfad51/
 
 RUN mvn -Pdeveloper -Dsimulator -DskipTests clean install
 
